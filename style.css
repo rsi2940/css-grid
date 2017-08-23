@@ -97,11 +97,11 @@ input[type="text"] {
   border: 2px solid black;
   /* height: 450px; */
   grid-template-columns: 5em 10em 1fr;
-  grid-template-rows: 3em 3em 3em 3em;
+  grid-template-rows: 3em 3em 3em 1fr;
   grid-template-areas: "firstNameLabel firstNameInput department"
     "lastNameLabel lastNameInput department"
     "addressLabel addressInput department" ". buttons buttons";
-  grid-row-gap: 0.5em;
+  grid-row-gap: 2em;
   -ms-grid-row-align: center;
 }
 label[for="firstName"] {
@@ -131,6 +131,12 @@ label[for="address"] {
 .department {
   padding-left: 0.5em;
   grid-area: department;
+}
+.department li {
+  padding: 0.25em;
+}
+.department ul {
+  border: 1px solid black;
 }
 .department h2 {
   margin-bottom: 0;
